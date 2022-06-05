@@ -498,22 +498,29 @@ collections:
             label: Text
             name: 3d503d2b
             widget: string
-          - hint: 'Original text: Hey, I’m Barik, key: -49ea9b7e'
+          - hint: 'Original text: Hey, I’m Barik!, key: c972bdf'
             label: Text
-            name: '-49ea9b7e'
+            name: c972bdf
             widget: string
           - hint: >-
-              Original text: a product designer & illustrator based in Berlin. ,
-              key: 7335259e
+              Original text: Senior product designer & illustrator based in
+              Berlin. , key: -6f4bc71
             label: Text
-            name: 7335259e
+            name: '-6f4bc71'
             widget: string
           - hint: >-
-              Original text: I specialize in UI/UX Design with solid background
-              in print and illustration., key: 2873a81d
+              Original text: I specialize in UX/UI Design with solid background
+              in print and illustration., key: 4f000b9f
             label: Text
-            name: 2873a81d
+            name: 4f000b9f
             widget: string
+          - hint: >-
+              Original text: At the moment I am finishing a full-stack
+              development training to have a React / Express snack., key:
+              32cd8cc8
+            label: Text
+            name: 32cd8cc8
+            widget: text
           - hint: 'Original text: Open case study, key: -32d8fb1'
             label: Text
             name: '-32d8fb1'
@@ -538,9 +545,9 @@ collections:
             label: Text
             name: 679bcea7
             widget: string
-          - hint: 'Original text: © 2021 Barik, key: -277f84b7'
+          - hint: 'Original text: © 2022 Barik, key: d66b68a'
             label: Text
-            name: '-277f84b7'
+            name: d66b68a
             widget: string
           - hint: 'Original text: Page Not Found, key: -40b0787c'
             label: Text
@@ -782,12 +789,12 @@ collections:
             name: 61075ec5
             widget: string
           - hint: >-
-              Original text: I’m Ruslan (Barik) Valikhanov, a product designer,
+              Original text: I’m Ruslan "Barik" Valikhanov, a product designer,
               musician and traveller based in Berlin, Germany. I’m passionate
-              about detailed simplicity in interfaces, solving problems and
-              understanding people., key: 51c387bd
+              about detailed simplicity in interfaces, solving problems, and
+              understanding people., key: 409ff4f0
             label: Text
-            name: 51c387bd
+            name: 409ff4f0
             widget: text
           - hint: 'Original text: My story, key: 7cb28da1'
             label: Text
@@ -979,7 +986,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-78f764eb'
+            name: 14c1053d
             widget: object
             fields:
               - name: url

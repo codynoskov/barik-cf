@@ -23,8 +23,8 @@
       <section class="section section_black">
         <div class="container container_hero">
           <div>
-            <h1>{{ texts.-49ea9b7e }}</h1>
-            <p class="intro">{{ texts.7335259e }}<br>{{ texts.2873a81d }}</p>
+            <h1>{{ texts.c972bdf }}</h1>
+            <p class="intro">{{ texts.-6f4bc71 }}<br>{{ texts.4f000b9f }}<br>{{ texts.32cd8cc8 }}</p>
             {%- assign collection = collections.case-study | sort: "_random" | limit: 1 -%}<div class="w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
@@ -37,7 +37,7 @@
                 <div>{{ texts.3d503d2b }}</div>
               </div>{%- endif -%}
             </div>
-          </div><img src="{{ images.-78f764eb.url }}" loading="lazy" width="525" id="w-node-d4359990-01b7-7f1f-0be1-127d369f0eb9-ece528ec" sizes="(max-width: 479px) 93vw, (max-width: 767px) 87vw, (max-width: 991px) 37vw, 31vw" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;37vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;31vw&quot;}]" alt="{{ images.-78f764eb.alt }}">
+          </div><img src="{{ images.14c1053d.url }}" loading="lazy" width="525" id="w-node-d4359990-01b7-7f1f-0be1-127d369f0eb9-ece528ec" sizes="(max-width: 479px) 93vw, (max-width: 767px) 87vw, (max-width: 991px) 37vw, 32vw" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;37vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;32vw&quot;}]" alt="{{ images.14c1053d.alt | trim | escape }}">
         </div>
       </section>
       <div class="section section_black">
@@ -46,7 +46,7 @@
             <h2>{{ texts.-23450784 }}</h2>
             <p>{{ texts.7cc26bc5 }}</p>
           </div>
-          {%- assign collection = collections.case-study -%}<div class="w-dyn-list">
+          {%- assign collection = collections.case-study | sort: "-created-on" -%}<div class="w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <div class="card" style="background-color: {{item.data.f_color}};">
@@ -79,7 +79,7 @@
             <h2>{{ texts.-603e8afd }}</h2>
             <p>{{ texts.679bcea7 }}</p>
           </div>
-          {%- assign collection = collections.gallery -%}<div class="w-dyn-list">
+          {%- assign collection = collections.gallery | sort: "-created-on" -%}<div class="w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="grid-gallery w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <a href="{{ links.23 }}" class="lightbox-link w-inline-block w-lightbox"><img id="gallery" loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;25vw&quot;}]" src="{{ item.data.f_big-image.url }}" alt="{{ item.data.f_caption }}" class="gallery-img">

@@ -20,6 +20,9 @@ module.exports = {
             return "Invalid JSON"
         }
     },
+    trim: function(s) {
+        return ('' + s).trim();
+    },
     escape: function (s) {
         return ('' + s) /* Forces the conversion to string. */
             .replace(/\\/g, '\\\\') /* This MUST be the 1st replacement. */

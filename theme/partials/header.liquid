@@ -13,7 +13,7 @@ background-color: red;
       </div>
       <div class="container container_nav">
         <div class="div-flex div-flex_header">
-          <div data-w-id="ea7df950-87cc-b613-111a-45fa97242bc6" class="burger"><img src="{{ images.1bffc334.url }}" loading="lazy" alt="{{ images.1bffc334.alt }}"></div>
+          <div data-w-id="ea7df950-87cc-b613-111a-45fa97242bc6" class="burger"><img src="{{ images.1bffc334.url }}" loading="lazy" alt="{{ images.1bffc334.alt | trim | escape }}"></div>
           <a href="{{ links.5e526fd4 }}" class="button button_header alt w-inline-block">
             <div>{{ texts.-6a356e67 }}</div>
           </a>
@@ -21,7 +21,7 @@ background-color: red;
         <div data-w-id="1d6c418d-30e2-706d-a170-798e78ed6ee9" class="div-full-screen div-full-screen_header">
           <div class="div-full-screen__block">
             <a href="{{ links.2f }}" aria-current="page" class="logo w-inline-block w--current">
-              <div>{{ texts.1b0d13 }}</div><img src="{{ images.439eef03.url }}" loading="lazy" width="525" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;48px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 48px, 100vw" alt="{{ images.439eef03.alt }}" class="small-face">
+              <div>{{ texts.1b0d13 }}</div><img src="{{ images.439eef03.url }}" loading="lazy" width="525" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;48px&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 767px) 48px, 100vw" alt="{{ images.439eef03.alt | trim | escape }}" class="small-face">
             </a>
             <div class="links-box">
               <a href="{{ links.2f }}" aria-current="page" class="link-block w-inline-block w--current">
@@ -30,7 +30,7 @@ background-color: red;
               <a href="{{ links.55b8e8be }}" class="link-block w-inline-block">
                 <div>{{ texts.3c2336d }}</div>
               </a>
-              {%- assign collection = collections.cv -%}<div class="w-dyn-list">
+              {%- assign collection = collections.cv | sort: "-created-on" -%}<div class="w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.data.f_pdf.url }}" class="link-block-cv w-inline-block">

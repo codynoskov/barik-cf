@@ -21,7 +21,7 @@
 <body>
   <div class="utility-page-wrap">
     <div class="utility-page-content w-password-page w-form">
-      <form action="/.wf_auth" method="post" id="email-form" name="email-form" data-name="email" class="utility-page-form w-password-page" data-ajax="true"><img src="{{ images.4abef31c.url }}" alt="{{ images.4abef31c.alt }}">
+      <form action="/.wf_auth" method="post" id="email-form" name="email-form" data-name="email" class="utility-page-form w-password-page" data-ajax="true"><img src="{{ images.4abef31c.url }}" alt="{{ images.4abef31c.alt | trim | escape }}">
         <h2>{{ texts.-11d4bbff }}</h2><label for="pass">{{ texts.4c641ebb }}</label><input type="password" class="w-password-page w-input" autofocus="true" maxlength="256" name="pass" data-name="field" placeholder="Enter your password" id="pass"><input type="submit" value="Submit" data-wait="Please wait..." class="w-password-page w-button">
         <div class="w-password-page w-form-fail">
           <div>{{ texts.-f5c4b5f }}</div>

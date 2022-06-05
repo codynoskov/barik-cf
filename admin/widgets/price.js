@@ -35,7 +35,7 @@
                 query(forID, "settings", ["slug"], "ecommerce").then(res => {
                     const {
                         currencies_and_formats: {currencies}
-                    } = res.payload.response.hits[0].data;
+                    } = res.payload.hits[0].data;
                     this.setState({
                         loading: false,
                         currencies

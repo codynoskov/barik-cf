@@ -21,7 +21,7 @@ let ecommerceFormat = {
     "currencies": [{"currencyCode": "usd", "symbol": "$"}]
 };
 try {
-    const {currencies_and_formats} = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'snipcart.json'));
+    const {currencies_and_formats} = require(path.join(process.cwd(), 'cms', '_data', 'settings', 'ecommerce.json'));
     ecommerceFormat = currencies_and_formats;
 } catch (e) {
 }

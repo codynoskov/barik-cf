@@ -26,7 +26,7 @@
         <div class="container">
           <div class="text-center">
             <h1 class="post-number">{{ texts.61075ec5 }}<br></h1>
-            <p>{{ texts.51c387bd }}<br></p><img class="study-image study-image_full" src="{{ images.-526eb0af.url }}" width="822" alt="{{ images.-526eb0af.alt }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;80vw&quot;}]" sizes="(max-width: 479px) 93vw, (max-width: 991px) 92vw, 80vw" loading="lazy">
+            <p>{{ texts.409ff4f0 }}<br></p><img class="study-image study-image_full" src="{{ images.-526eb0af.url }}" width="822" alt="{{ images.-526eb0af.alt | trim | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;80vw&quot;}]" sizes="(max-width: 479px) 93vw, (max-width: 991px) 92vw, 80vw" loading="lazy">
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
               <div class="rte-block w-richtext">
                 <p>{{ texts.-26f034b }}<br><br>{{ texts.-6b5db437 }}<br><br>{{ texts.6f63ee2d }}</p>
               </div>
-              {%- assign collection = collections.cv -%}<div class="w-dyn-list">
+              {%- assign collection = collections.cv | sort: "-created-on" -%}<div class="w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.data.f_pdf.url }}" class="button button_orange w-inline-block">
@@ -51,7 +51,7 @@
                 </div>{%- endif -%}
               </div>
             </div>
-            <div id="w-node-e950e057-3026-1ecb-84d6-d016d7c40131-6d6d0c31"><img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ images.-5260992e.url }}" sizes="(max-width: 479px) 93vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 45vw" alt="{{ images.-5260992e.alt }}"></div>
+            <div id="w-node-e950e057-3026-1ecb-84d6-d016d7c40131-6d6d0c31"><img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ images.-5260992e.url }}" sizes="(max-width: 479px) 93vw, (max-width: 767px) 92vw, (max-width: 991px) 94vw, 45vw" alt="{{ images.-5260992e.alt | trim | escape }}"></div>
           </div>
         </div>
       </div>
