@@ -15,7 +15,7 @@ f_summary: >-
   * **team**\
     1 Frontender/Designer, 2 Backenders
   * **problem**\
-    Traders in NFTs seek to identify current trending collections and track wallets that hold these collections. Having both of these knowledges they make more informed purchasing decisions.
+    Traders in NFTs seek to identify current trending collections and track wallets that hold these collections. 
   * **solution**\
     Develop an easy-to-use web3 app featuring continuously updated collections and wallets side-by-side.
   * **live link**\
