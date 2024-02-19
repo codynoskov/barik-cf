@@ -21,6 +21,7 @@ f_summary: >-
   * **live link**\
     [M﻿y git](https://github.com/Barrikoder/)\
     [P﻿roject git](https://github.com/Barrikoder/nft/tree/main)
+f_color: hsla(233.33333333333334, 32.14%, 56.08%, 1.00)
 tags: case-study
 layout: "[case-study].html"
 date: 2024-02-19T15:26:37.826Z
