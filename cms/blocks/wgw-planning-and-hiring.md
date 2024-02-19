@@ -8,7 +8,7 @@ f_range-number: 9
 f_layout: Left text big (white)
 f_header: Planning and hiring
 f_image:
-  url: /assets/images/wgw_push.png
+  url: /assets/images/wgw_planning.png
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:44:20.072Z
