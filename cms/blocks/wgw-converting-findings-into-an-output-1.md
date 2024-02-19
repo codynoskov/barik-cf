@@ -17,4 +17,4 @@ seo:
   twitter:title: summary
   twitter:card: summary
 ---
-We distilled the top nine findings from the interviews, breaking them down into observations and opportunities/solutions. These outputs were grouped into two larger categories, each dedicated to a specific department (Marketing and Product). Both departments needed to understand the prioritization of these outcomes. Viole! 🥁
+We distilled the top nine findings from the interviews, breaking them down into observations and opportunities/solutions. These outputs were grouped into two larger categories, each dedicated to a specific department (Marketing and Product). Both departments needed to understand the prioritization of these outcomes. Voila!
