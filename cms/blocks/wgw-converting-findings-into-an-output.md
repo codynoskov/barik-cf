@@ -1,14 +1,14 @@
 ---
-title: wgw Converting findings into an output
+title: wgw Next steps
 created-on: 2024-02-19T16:56:30.784Z
 updated-on: 2024-02-19T16:56:30.790Z
 published-on: 2024-02-19T16:56:30.794Z
 f_relative-to: cms/case-study/user-research-on-the-app.md
-f_range-number: 7
-f_layout: Center text (grey)
-f_header: Converting findings into an output
+f_range-number: 8
+f_layout: Center text (white)
+f_header: Next steps
 f_image:
-  url: /assets/images/wgw_findings.png
+  url: ""
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:56:30.800Z
@@ -17,4 +17,4 @@ seo:
   twitter:title: summary
   twitter:card: summary
 ---
-We distilled the top nine findings from the interviews, breaking them down into observations and opportunities/solutions. These outputs were grouped into two larger categories, each dedicated to a specific department (Marketing and Product). Both departments needed to understand the prioritization of these outcomes. Viole! 🥁
+Product and marketing teams analyzed these outcomes and identified several prioritized items for further action. The design, development, and support of developers for these initiatives will be addressed in subsequent stages. I'm pleased that these outcomes have translated into tangible progress. Let's keep moving forward!
