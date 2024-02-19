@@ -5,7 +5,7 @@ updated-on: 2024-02-19T16:52:55.715Z
 published-on: 2024-02-19T16:52:55.721Z
 f_relative-to: cms/case-study/user-research-on-the-app.md
 f_range-number: 4
-f_layout: Left text big (white)
+f_layout: Left text small (grey)
 f_header: Interviews
 f_image:
   url: /assets/images/wgw_interviews.png
