@@ -29,6 +29,6 @@ seo:
   twitter:title: summary
   twitter:card: summary
 ---
-* Full stack school
-* 2022
-* Front end development
+* From endpoints through design to frontend and back
+* School project
+* Designers understanding developers
