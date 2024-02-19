@@ -8,7 +8,7 @@ f_range-number: 5
 f_layout: Left text small (grey)
 f_header: Connecting web3 wallet and crafting logo
 f_image:
-  url: /assets/images/web3-mistakes.png
+  url: /assets/images/web3_wallet_logo.png
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:18:57.939Z
