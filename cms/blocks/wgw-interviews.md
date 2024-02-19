@@ -8,7 +8,7 @@ f_range-number: 4
 f_layout: Left text big (white)
 f_header: Interviews
 f_image:
-  url: /assets/images/wgw_items.png
+  url: /assets/images/wgw_interviews.png
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:52:55.725Z
