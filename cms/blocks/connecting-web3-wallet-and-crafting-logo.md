@@ -1,5 +1,5 @@
 ---
-title: Connecting web3 wallet and crafting logo
+title: web3 Connecting web3 wallet and crafting logo
 created-on: 2024-02-19T16:18:57.921Z
 updated-on: 2024-02-19T16:18:57.926Z
 published-on: 2024-02-19T16:18:57.930Z
