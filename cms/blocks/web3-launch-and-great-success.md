@@ -8,7 +8,7 @@ f_range-number: 7
 f_layout: Center text (grey)
 f_header: Launch and great success
 f_image:
-  url: /assets/images/web3_checkups.png
+  url: /assets/images/web3_launch.png
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:22:16.398Z
