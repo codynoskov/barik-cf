@@ -5,7 +5,7 @@ updated-on: 2024-02-19T16:45:18.908Z
 published-on: 2024-02-19T16:45:18.914Z
 f_relative-to: cms/case-study/user-research-on-the-app.md
 f_range-number: 3
-f_layout: Left text big (white)
+f_layout: Center text (grey)
 f_header: Required items for the research
 f_image:
   url: /assets/images/wgw_items.png
