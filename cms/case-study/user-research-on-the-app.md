@@ -27,6 +27,6 @@ layout: "[case-study].html"
 slug: poultry-farm-app
 date: 2024-02-19T16:30:10.987Z
 ---
-* In-depths user research in german
+* In-depths user research 
 * M﻿obile native applications 
 * Planning, hiring, analysing data, personas, output for product
