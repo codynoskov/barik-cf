@@ -8,7 +8,7 @@ f_range-number: 14
 f_layout: Left text big (white)
 f_header: Next steps and learnings
 f_image:
-  url: /assets/images/web3_checkups.png
+  url: /assets/images/web3_next_steps.png
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T16:23:07.793Z
