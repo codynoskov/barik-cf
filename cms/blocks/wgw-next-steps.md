@@ -8,7 +8,7 @@ f_range-number: 9
 f_layout: Center text (white)
 f_header: Next steps
 f_image:
-  url: /assets/images/wgw_findings.png
+  url: ""
 tags: blocks
 layout: "[blocks].html"
 date: 2024-02-19T17:13:03.491Z
