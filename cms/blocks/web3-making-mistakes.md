@@ -5,7 +5,7 @@ updated-on: 2024-02-19T16:18:06.854Z
 published-on: 2024-02-19T16:18:06.860Z
 f_relative-to: cms/case-study/web3-frontend.md
 f_range-number: 4
-f_layout: Center text (white)
+f_layout: Center text (grey)
 f_header: Making mistakes
 f_image:
   url: /assets/images/web3-mistakes.png
