@@ -1,11 +1,11 @@
 ---
-title: Connecting web3 wallet and crafting logo
+title: web3 Connecting web3 wallet and crafting logo
 created-on: 2024-02-19T16:18:57.921Z
 updated-on: 2024-02-19T16:18:57.926Z
 published-on: 2024-02-19T16:18:57.930Z
 f_relative-to: cms/case-study/web3-frontend.md
 f_range-number: 5
-f_layout: Center text (white)
+f_layout: Left text small (grey)
 f_header: Connecting web3 wallet and crafting logo
 f_image:
   url: /assets/images/web3-mistakes.png
