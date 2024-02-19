@@ -5,7 +5,7 @@ updated-on: 2024-02-19T16:55:32.635Z
 published-on: 2024-02-19T16:55:32.640Z
 f_relative-to: cms/case-study/user-research-on-the-app.md
 f_range-number: 6
-f_layout: Left text big (white)
+f_layout: Left text small (grey)
 f_header: Personas
 f_image:
   url: /assets/images/wgw_personas.png
