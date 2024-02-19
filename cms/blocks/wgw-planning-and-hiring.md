@@ -4,7 +4,7 @@ created-on: 2024-02-19T16:44:20.055Z
 updated-on: 2024-02-19T16:44:20.062Z
 published-on: 2024-02-19T16:44:20.067Z
 f_relative-to: cms/case-study/user-research-on-the-app.md
-f_range-number: 9
+f_range-number: 2
 f_layout: Left text big (white)
 f_header: Planning and hiring
 f_image:
