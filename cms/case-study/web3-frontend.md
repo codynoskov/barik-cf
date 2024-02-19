@@ -8,20 +8,19 @@ f_description: "Help people to track wallets (talking about NFTs) and earn money
 f_header-image:
   url: /assets/images/web3_main.png
 f_summary: >-
-  
-
   * **my role**\
-    Product designer
+    Product designer / Developer
   * **company**\
-    AMBOSS
+    WBS School Diploma Project
   * **team**\
-    8 persons squad from product manager to devs + stakeholders
+    1 Frontender/Designer, 2 Backenders
   * **problem**\
-    How might we help students prepare for their exams in one unified place?
+    Traders in NFTs seek to identify current trending collections and track wallets that hold these collections. Having both of these knowledges they make more informed purchasing decisions.
   * **solution**\
-    Provide a flexible and customizable study plan with enough structure and recommendations
+    Develop an easy-to-use web3 app featuring continuously updated collections and wallets side-by-side.
   * **live link**\
-    [M﻿y git](https://github.com/Barrikoder/)
+    [M﻿y git](https://github.com/Barrikoder/)\
+    [P﻿roject git](https://github.com/Barrikoder/nft/tree/main)
 tags: case-study
 layout: "[case-study].html"
 date: 2024-02-19T15:26:37.826Z
