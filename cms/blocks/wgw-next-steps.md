@@ -18,3 +18,5 @@ seo:
   twitter:card: summary
 ---
 Product and marketing teams analyzed these outcomes and identified several prioritized items for further action. The design, development, and support of developers for these initiatives will be addressed in subsequent stages. I'm pleased that these outcomes have translated into tangible progress. Let's keep moving forward!
+
+B﻿ig shoutout to Julia, without your help it won't be doable! [LinkedIn](https://www.linkedin.com/in/julia-pistunow/)
