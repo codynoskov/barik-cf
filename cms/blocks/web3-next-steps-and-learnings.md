@@ -18,3 +18,5 @@ seo:
   twitter:card: summary
 ---
 Completing this project provided an opportunity to delve deeper into the technical aspects of product development and gain a better understanding of the daily struggles faced by developers. I became a more proficient designer equipped with technical skills. While some believe that a technical background may constrain creativity, I discovered that it often provides a sense of direction and freedom. Throughout the course, I successfully learned frontend development, including various JavaScript and CSS tricks. Although I briefly considered changing my career path during the program (since the school was amazing), I ultimately realized that a developer's role isn't exactly I was looking for. However, leveraging my coding knowledge has become one of my strengths in my career journey.
+
+T﻿hanks to amazing Nina and Sven for the teamwork!
