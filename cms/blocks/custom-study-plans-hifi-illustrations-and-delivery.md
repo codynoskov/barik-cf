@@ -5,7 +5,7 @@ updated-on: 2021-09-19T11:43:36.316Z
 published-on: 2021-09-19T11:44:38.895Z
 f_relative-to: cms/case-study/custom-study-plans.md
 f_range-number: 8
-f_layout: Center text (white)
+f_layout: Center text (grey)
 f_header: Hifi, illustrations and delivery
 f_image:
   url: /assets/images/hifies.png
