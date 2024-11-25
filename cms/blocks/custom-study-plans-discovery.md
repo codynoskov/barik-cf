@@ -15,14 +15,16 @@ layout: "[blocks].html"
 slug: custom-study-plans-discovery
 date: 2024-11-25T09:45:13.123Z
 ---
-**At the beginning w﻿e didn't have a clear understanding of what we are solving**
+**At the beginning w﻿e didn't have a clear understanding of what we are solving.**
 
 W﻿e've got a brief from our Business Unit, saying that our expansion to the US market must be supported by the design of our system. They pointed out that our US students are dropping out at the beginning of their journey and we need to figure out:
 
-* which problem they are facing after opening our system? (coming to problem statement)
+* which problem they are facing after opening our system? (coming to a problem statement)
 * how to make them stay? (improving the retention)
 
-**So what stops users from using their subscription/trial?**
+W﻿e did an initial exploration of students pain points. For that we used our base of user interviews and specifically invited a couple of users to talk about their day-to-day struggles.
+
+**So what stops students from using their subscription/trial?**
 
 * They keep getting distracted and can’t find a structure. The pick-your-own-adventure path is cumbersome to figure out.
 * They are using some other resource. Still want to do it, but want to do other things more.
