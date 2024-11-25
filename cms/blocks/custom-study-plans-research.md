@@ -4,7 +4,7 @@ created-on: 2021-09-07T10:42:44.635Z
 updated-on: 2021-09-07T10:48:45.544Z
 published-on: 2021-09-07T12:50:29.690Z
 f_relative-to: cms/case-study/custom-study-plans.md
-f_range-number: 1.2
+f_range-number: 2
 f_layout: Left text small (grey)
 f_header: Collecting info
 f_image:
