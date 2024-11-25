@@ -8,7 +8,7 @@ f_range-number: 10
 f_layout: Left text small (grey)
 f_header: Implementation
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/613748c7ffab3f135d4b5c12_Group%205303.png
+  url: /assets/images/implementation.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
