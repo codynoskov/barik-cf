@@ -1,19 +1,19 @@
 ---
-f_layout: Left text big (white)
-f_range-number: 4.1
 title: Custom Study Plans - Next steps and learnings
+created-on: 2021-09-07T11:14:47.597Z
+updated-on: 2021-09-18T12:04:55.081Z
+published-on: 2021-09-18T15:12:21.662Z
+f_relative-to: cms/case-study/custom-study-plans.md
+f_range-number: 10
+f_layout: Left text big (white)
 f_header: Next steps and learnings
 f_image:
-  url: >-
-    https://uploads-ssl.webflow.com/61364e43744e4447f432410f/6137499e2a073e42104530fe_Bildschirmfoto%202020-06-29%20um%2017.49%201.png
+  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/6137499e2a073e42104530fe_Bildschirmfoto%202020-06-29%20um%2017.49%201.png
   alt: null
-slug: custom-study-plans-next-steps-and-learnings
-f_relative-to: cms/case-study/custom-study-plans.md
-updated-on: '2021-09-18T12:04:55.081Z'
-created-on: '2021-09-07T11:14:47.597Z'
-published-on: '2021-09-18T15:12:21.662Z'
-layout: '[blocks].html'
 tags: blocks
+layout: "[blocks].html"
+slug: custom-study-plans-next-steps-and-learnings
+date: 2024-11-25T14:27:16.433Z
 ---
 
 We collect and prioritise feedback from our users and we are making improvements based on this.  
