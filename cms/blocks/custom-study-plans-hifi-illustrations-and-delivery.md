@@ -8,7 +8,7 @@ f_range-number: 8
 f_layout: Center text (grey)
 f_header: Hifi, illustrations and delivery
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/614722602ae469eb86158379_hifi.png
+  url: /assets/images/hifies.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
