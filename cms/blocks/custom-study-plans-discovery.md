@@ -4,8 +4,8 @@ created-on: 2021-09-07T10:34:18.182Z
 updated-on: 2021-09-07T12:25:04.711Z
 published-on: 2021-09-07T12:50:29.690Z
 f_relative-to: cms/case-study/custom-study-plans.md
-f_range-number: 0
-f_layout: Center text (white)
+f_range-number: -3
+f_layout: Left text big (white)
 f_header: Framing the problem statement
 f_image:
   url: /assets/images/csp_problem.png
