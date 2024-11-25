@@ -15,14 +15,15 @@ layout: "[blocks].html"
 slug: custom-study-plans-brainstorming-first-user-testing
 date: 2024-11-25T15:40:40.570Z
 ---
+W﻿e went to whiteboarding and understood the types of study plans we can offer to our students. I went on and did a comic-alike stories, where I painted out 4 concepts of study plans to students. This conceptualized representation of ideas allowed us to test even before doing any prototypes of wireframes. So we immediately run these "drawings" through our students and got our answers. Isn't it a rapid prototyping? 
 
 **Questions:**
 
-*   whether users want to have their university or us to be involved in their study plans
-*   how they want these study plans to be customized and in sync with their schedule
-*   which sources they would like to have within their study plans
+* whether users want to have their university or us to be involved in their study plans
+* how they want these study plans to be customized and in sync with their schedule
+* which sources they would like to have within their study plans
 
 **Answers:**
 
-*   students wanted to customize their own plan
-*   with smart AI recommendations.
+* students wanted to customize their own plan
+* with smart AI recommendations.
