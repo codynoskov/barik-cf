@@ -8,7 +8,7 @@ f_range-number: 4
 f_layout: Left text small (grey)
 f_header: Brainstorming & first user testing
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/6137428f4315fc2945ef13e5_Group%207024.png
+  url: /assets/images/barinstorming.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
