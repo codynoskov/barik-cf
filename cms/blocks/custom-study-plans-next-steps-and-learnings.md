@@ -4,7 +4,7 @@ created-on: 2021-09-07T11:14:47.597Z
 updated-on: 2021-09-18T12:04:55.081Z
 published-on: 2021-09-18T15:12:21.662Z
 f_relative-to: cms/case-study/custom-study-plans.md
-f_range-number: 100
+f_range-number: 12
 f_layout: Left text big (white)
 f_header: Next steps and learnings
 f_image:
