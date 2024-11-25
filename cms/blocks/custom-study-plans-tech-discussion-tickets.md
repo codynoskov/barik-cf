@@ -8,7 +8,7 @@ f_range-number: 7
 f_layout: Center text (white)
 f_header: Tech discussion, tickets
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/61374574bc325359a3e79d6a_Group%207027.png
+  url: /assets/images/tech-discussion.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
