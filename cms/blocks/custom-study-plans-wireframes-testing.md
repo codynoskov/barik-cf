@@ -8,12 +8,11 @@ f_range-number: 6
 f_layout: Center text (white)
 f_header: Wireframes, testing
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/613744b4df89a3498eae30ca_Group%207026.png
+  url: /assets/images/wireframes-testing.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
 slug: custom-study-plans-wireframes-testing
 date: 2024-11-25T14:22:11.067Z
 ---
-
-Together with the UR department I conducted user interviews either as an interviewer or note taker. As an outcome from interviews **we usually have a deck with a detailed analysis** of the interviews and suggested further steps.
+Together with the UR department I conducted user interviews either as an interviewer or note taker. As an outcome from interviews **we usually have a deck with a detailed analysis** of the interviews and suggested further steps. We were thinking on how to make a study plan builder page, structure the landing page of the study plan. Another question was - how to show an everyday progress and an analysis for our students. We also tried to understand how to cheer them up in their studies and how to give them necessary recommendations down the way.
