@@ -8,7 +8,7 @@ f_range-number: 2
 f_layout: Left text big (white)
 f_header: Problems and solutions
 f_image:
-  url: /assets/images/csp_problem.png
+  url: /assets/images/stud-pain-points2.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
