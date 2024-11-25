@@ -8,7 +8,7 @@ f_range-number: 13
 f_layout: Left text small (grey)
 f_header: Collecting info
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/61374210090bffecb7eb32fe_Bildschirmfoto%202021-02-03%20um%2023.50.png
+  url: /assets/images/trial-usage.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
