@@ -4,7 +4,7 @@ created-on: 2021-09-07T10:48:06.354Z
 updated-on: 2021-09-07T10:49:31.456Z
 published-on: 2021-09-07T12:50:29.690Z
 f_relative-to: cms/case-study/custom-study-plans.md
-f_range-number: 1
+f_range-number: 4
 f_layout: Left text small (grey)
 f_header: Brainstorming & first user testing
 f_image:
