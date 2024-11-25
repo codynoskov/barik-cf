@@ -4,7 +4,7 @@ created-on: 2024-11-25T12:30:44.454Z
 updated-on: 2024-11-25T12:30:44.462Z
 published-on: 2024-11-25T12:30:44.472Z
 f_relative-to: cms/case-study/custom-study-plans.md
-f_range-number: 2
+f_range-number: 1
 f_layout: Left text big (white)
 f_header: Problems and solutions
 f_image:
