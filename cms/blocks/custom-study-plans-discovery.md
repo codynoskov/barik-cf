@@ -8,7 +8,7 @@ f_range-number: 11
 f_layout: Left text big (white)
 f_header: Framing the problem statement
 f_image:
-  url: /assets/images/stud-pain-points.png
+  url: /assets/images/stud-pain-points_3.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
@@ -26,3 +26,17 @@ W﻿e've got a brief from our Business Unit, saying that our expansion to the US
 We did an initial exploration of students pain points.
 
 For that we used our knowledge base of user interviews and discussed possible students challenges with our User Research department. What was specifically useful – is to invite a couple of students to talk about their day-to-day issues in a form of free floating user interviews and to ask them to complete a couple of tasks within our system.
+
+**So which problem students facing during their trial period?**
+
+* They keep getting distracted and can’t find a structure. The pick-your-own-adventure path is cumbersome to figure out.
+* They are using some other resource. Our resource is good, but they are bounded to another and don’t feel like they want to change now.
+* They are super busy, not finding what they want really quick makes them abandon the resource.
+* Expectation mismatch - they wanted to have everything in one place and didn't see it in our case.
+
+**What are the potential solutions to increase users retention?**
+
+* Onboard users so they know how to use the platform to the fullest.
+* Motivate users with product copy, and gamification.
+* Make a structured plan for users (with their input). Then remind them to follow it.
+* Show progress over time, to show their movement towards a goal.
