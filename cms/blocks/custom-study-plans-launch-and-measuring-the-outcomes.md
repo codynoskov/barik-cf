@@ -8,7 +8,7 @@ f_range-number: 11
 f_layout: Left text small (grey)
 f_header: Launch and measuring the outcomes
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/6137493bffab3f5bf24b5c4b_Group%207029.png
+  url: /assets/images/launch.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
