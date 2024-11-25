@@ -8,7 +8,7 @@ f_range-number: 9
 f_layout: Left text small (grey)
 f_header: Design documentation
 f_image:
-  url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/6137477dddbbdc3eb0f6d426_Group%205305.png
+  url: /assets/images/design-doc.png
   alt: null
 tags: blocks
 layout: "[blocks].html"
