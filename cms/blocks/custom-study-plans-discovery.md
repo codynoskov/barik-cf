@@ -22,7 +22,9 @@ W﻿e've got a brief from our Business Unit, saying that our expansion to the US
 * which problem they are facing after opening our system? (coming to a problem statement)
 * how to make them stay? (improving the retention)
 
-W﻿e did an initial exploration of students pain points. For that we used our base of user interviews and specifically invited a couple of users to talk about their day-to-day struggles.
+We did an initial exploration of students pain points.
+
+For that we used our knowledge base of user interviews and discussed possible students challenges with our User Research department. What was specifically useful – is to invite a couple of students to talk about their day-to-day issues in a form of free floating user interviews and asking them to complete a couple of task within our system. 
 
 **So what stops students from using their subscription/trial?**
 
