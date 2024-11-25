@@ -19,8 +19,8 @@ date: 2024-11-25T09:45:13.123Z
 
 W﻿e've got a brief from our Business Unit, saying that our expansion to the US market must be supported by the design of our system. They pointed out that our US students are dropping out at the beginning of their journey and we need to figure out:
 
-* which problem they are facing after opening our system? (coming to a problem statement)
-* how to make them stay? (improving the retention)
+1. which problem they are facing after opening our system? (coming to a problem statement)
+2. how to make them stay? (improving the retention)
 
 We did an initial exploration of students pain points.
 
