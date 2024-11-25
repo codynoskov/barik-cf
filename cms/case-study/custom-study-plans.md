@@ -11,18 +11,18 @@ f_header-image:
   url: https://uploads-ssl.webflow.com/61364e43744e4447f432410f/61372547634b3054b302d5da_Group%205307.png
   alt: null
 f_summary: >-
-  *   **my role**  
-      Product designer
-  *   **company**  
-      AMBOSS
-  *   **team**  
-      8 persons squad from product manager to devs + stakeholders
-  *   **problem**  
-      How might we help students prepare for their exams in one unified place?
-  *   **solution**  
-      Provide a flexible and customizable study plan with enough structure and recommendations
-  *   **live link**  
-      Link to the product
+  * **my role**\
+    Product designer
+  * **company**\
+    AMBOSS
+  * **team**\
+    8 persons squad from product manager to devs + stakeholders
+  * **problem**\
+    How might we help students prepare for their exams in one unified place?
+  * **solution**\
+    Provide a flexible and customizable study plan with enough structure and recommendations
+  * **live link**\
+    [Link to the product](https://www.amboss.com/us)
 f_color: hsla(233.33333333333334, 32.14%, 56.08%, 1.00)
 tags: case-study
 layout: "[case-study].html"
