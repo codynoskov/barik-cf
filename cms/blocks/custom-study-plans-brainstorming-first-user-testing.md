@@ -19,11 +19,14 @@ W﻿e went to whiteboarding and understood the types of study plans we can offer
 
 **Questions:**
 
-* whether users want to have their university or us to be involved in their study plans
-* how they want these study plans to be customized and in sync with their schedule
-* which sources they would like to have within their study plans
+\- whether users want to have their university or us to be involved in their study plans 
+
+\- how they want these study plans to be customized and in sync with their schedule 
+
+\- which sources they would like to have within their study plans
 
 **Answers:**
 
-* students wanted to customize their own plan
-* with smart AI recommendations.
+\- students wanted to customize their own plan
+
+\- with smart AI recommendations.
