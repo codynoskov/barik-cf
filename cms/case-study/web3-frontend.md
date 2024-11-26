@@ -3,7 +3,7 @@ title: Web3 frontend
 created-on: 2024-02-19T15:26:37.803Z
 updated-on: 2024-02-19T15:26:37.811Z
 published-on: 2024-02-19T15:26:37.818Z
-f_tag-line: full stack school · 2022 · front end development
+f_tag-line: 2022 · full stack school · front end development
 f_description: "Help people to track wallets (talking about NFTs) and earn money. "
 f_header-image:
   url: /assets/images/web3_main.png
@@ -30,6 +30,6 @@ seo:
   twitter:title: summary
   twitter:card: summary
 ---
-* From endpoints through design to frontend and back
-* School project
-* Designers understanding developers
+* From endpoints in the backend to design representation
+* Dashboards, NFTs, collections
+* GitHub, frontend
