@@ -3,7 +3,7 @@ title: User research on the app
 created-on: 2024-02-19T16:30:10.971Z
 updated-on: 2024-02-19T16:30:10.977Z
 published-on: 2024-02-19T16:30:10.981Z
-f_tag-line: case study · 2023 · user research
+f_tag-line: 2023 · case study · user research
 f_description: "Figure out what to develop next and ask our users for feedback. "
 f_header-image:
   url: /assets/images/wgw_main.png
