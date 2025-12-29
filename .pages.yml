@@ -88,6 +88,66 @@ content:
         hint: Bullet points of main features or highlights (shown on case study page)
       
       # ────────────────────────────────────────
+      # Sections
+      # ────────────────────────────────────────
+      - name: f_sections
+        label: Case Study Sections
+        type: list
+        required: false
+        hint: Sections/blocks that appear on this case study page
+        fields:
+          - name: title
+            label: Section Title
+            type: string
+            required: true
+            hint: Internal title for this section
+          
+          - name: f_header
+            label: Section Header
+            type: string
+            hint: Main heading displayed in the section
+          
+          - name: f_range-number
+            label: Display Order
+            type: number
+            required: true
+            hint: Order in which this section appears (1 = first, 2 = second, etc.). Lower numbers appear first.
+          
+          - name: f_layout
+            label: Layout Style
+            type: select
+            required: true
+            hint: How this section is displayed on the page
+            options:
+              - "Left text small (grey)"
+              - "Left text big (white)"
+              - "Center text (white)"
+              - "Center text (grey)"
+          
+          - name: body
+            label: Section Content
+            type: markdown
+            hint: Main content of this section. Use markdown for formatting (bold, lists, links, etc.)
+          
+          - name: f_image
+            label: Section Image
+            type: object
+            hint: Image displayed in this section
+            fields:
+              - name: url
+                label: Image File
+                type: image
+              - name: alt
+                label: Alt Text
+                type: string
+                hint: Describe the image for accessibility
+          
+          - name: f_image-alt-text
+            label: Image Alt Text (fallback)
+            type: string
+            hint: Alternative alt text if not set in the image object above
+      
+      # ────────────────────────────────────────
       # Publishing & Dates
       # ────────────────────────────────────────
       - name: created-on
@@ -174,170 +234,6 @@ content:
             label: Additional HTML Tags
             type: text
             hint: Custom meta tags in HTML format (advanced)
-
-  # ============================================
-  # CASE STUDY SECTIONS - Content blocks within case studies
-  # ============================================
-  - name: blocks
-    label: Case Study Sections
-    type: collection
-    path: cms/blocks
-    extension: md
-    create: true
-    delete: true
-    view:
-      fields: [title, f_relative-to, f_range-number, created-on]
-      sort_by: f_range-number
-      sort_direction: asc
-    fields:
-      # ────────────────────────────────────────
-      # Basic Information
-      # ────────────────────────────────────────
-      - name: title
-        label: Section Title
-        type: string
-        required: true
-        hint: Name of this section (e.g., "Discovery", "Research", "Implementation", "Next Steps")
-      
-      - name: f_header
-        label: Section Header
-        type: string
-        hint: Main heading displayed in the section (if different from title above)
-      
-      # ────────────────────────────────────────
-      # Relationship to Case Study
-      # ────────────────────────────────────────
-      - name: f_relative-to
-        label: Belongs to Case Study
-        type: relation
-        required: true
-        collection: case_study
-        value_field: cms/case-study/{{slug}}.md
-        search_fields: [slug, title]
-        display_fields: [title]
-        hint: Select which case study this section belongs to. The section will appear on that case study's page.
-      
-      - name: f_range-number
-        label: Display Order
-        type: number
-        required: true
-        hint: Order in which this section appears (1 = first, 2 = second, etc.). Lower numbers appear first.
-      
-      # ────────────────────────────────────────
-      # Layout & Styling
-      # ────────────────────────────────────────
-      - name: f_layout
-        label: Layout Style
-        type: select
-        required: true
-        hint: How this section is displayed on the page
-        options:
-          - "Left text small (grey)"
-          - "Left text big (white)"
-          - "Center text (white)"
-          - "Center text (grey)"
-      
-      # ────────────────────────────────────────
-      # Content
-      # ────────────────────────────────────────
-      - name: body
-        label: Section Content
-        type: markdown
-        hint: Main content of this section. Use markdown for formatting (bold, lists, links, etc.)
-      
-      - name: f_image
-        label: Section Image
-        type: object
-        hint: Image displayed in this section
-        fields:
-          - name: url
-            label: Image File
-            type: image
-          - name: alt
-            label: Alt Text
-            type: string
-            hint: Describe the image for accessibility
-      
-      - name: f_image-alt-text
-        label: Image Alt Text (fallback)
-        type: string
-        hint: Alternative alt text if not set in the image object above
-      
-      # ────────────────────────────────────────
-      # Publishing & Dates
-      # ────────────────────────────────────────
-      - name: created-on
-        label: Created On
-        type: datetime
-      
-      - name: updated-on
-        label: Updated On
-        type: datetime
-      
-      - name: published-on
-        label: Published On
-        type: datetime
-      
-      - name: date
-        label: Publish Date
-        type: datetime
-        hidden: true
-      
-      # ────────────────────────────────────────
-      # Technical (Auto-managed)
-      # ────────────────────────────────────────
-      - name: tags
-        label: Tags
-        type: string
-        default: blocks
-        hidden: true
-      
-      - name: layout
-        label: Layout Template
-        type: string
-        default: "[blocks].html"
-        hidden: true
-      
-      # ────────────────────────────────────────
-      # SEO Settings
-      # ────────────────────────────────────────
-      - name: seo
-        label: SEO Settings
-        type: object
-        collapsed: true
-        fields:
-          - name: title
-            label: SEO Title
-            type: string
-          - name: description
-            label: Meta Description
-            type: string
-          - name: noindex
-            label: No Index
-            type: boolean
-            default: false
-          - name: og:title
-            label: Open Graph Title
-            type: string
-          - name: og:image
-            label: Open Graph Image
-            type: image
-          - name: twitter:title
-            label: Twitter Title
-            type: string
-          - name: twitter:card
-            label: Twitter Card Type
-            type: string
-            default: summary
-          - name: twitter:site
-            label: Twitter Site Handle
-            type: string
-          - name: twitter:creator
-            label: Twitter Creator Handle
-            type: string
-          - name: additional_tags
-            label: Additional HTML Tags
-            type: text
 
   # ============================================
   # GALLERY - Illustration portfolio

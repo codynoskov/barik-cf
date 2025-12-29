@@ -17,7 +17,8 @@
     "prebuild": "npm run optimize",
     "serve": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "local-backend": "npx netlify-cms-proxy-server"
+    "local-backend": "npx netlify-cms-proxy-server",
+    "migrate-blocks": "node ./_utils/scripts/migrate-blocks-to-sections.js"
   },
   "devDependencies": {
     "date-fns": "2.16.1",

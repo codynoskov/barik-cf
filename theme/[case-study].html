@@ -39,50 +39,50 @@
         </div>
       </div>
       <div class="case-blocks">
-        {%- assign collection = collections.blocks | filter: "f_relative-to,eq,DYN_CONTEXT", "ALL", page.inputPath | sort: "f_range-number, created-on" -%}<div class="w-dyn-list">
+        {%- if f_sections -%}{%- assign collection = f_sections | sort: "f_range-number" -%}<div class="w-dyn-list">
           {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
             {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
-              {%- if item.data.f_layout == "Left text small (grey)" -%}<div class="section section_grey divider-top">
+              {%- if item.f_layout == "Left text small (grey)" -%}<div class="section section_grey divider-top">
                 <div class="container container_text-left">
                   <div class="grid-left">
                     <div>
-                      <h2>{{ item.data.f_header }}</h2>
-                      <div class="rte-block w-richtext">{{ item.templateContent | markdown | markdown }}</div>
+                      <h2>{{ item.f_header }}</h2>
+                      <div class="rte-block w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    <div id="w-node-_1538c8da-0845-a689-9f00-03af44619ebb-c55c018f"><img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image-alt-text }}"></div>
+                    <div id="w-node-_1538c8da-0845-a689-9f00-03af44619ebb-c55c018f">{%- if item.f_image.url -%}<img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}">{%- endif -%}</div>
                   </div>
                 </div>
               </div>{%- endif -%}
-              {%- if item.data.f_layout == "Center text (white)" -%}<div class="section">
+              {%- if item.f_layout == "Center text (white)" -%}<div class="section">
                 <div class="container container_text-center">
                   <div>
                     <div class="div-flex-vertical">
-                      <h2>{{ item.data.f_header }}</h2>
-                      <div class="w-richtext">{{ item.templateContent | markdown | markdown }}</div>
+                      <h2>{{ item.f_header }}</h2>
+                      <div class="w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    <div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image-alt-text }}"></div>
+                    {%- if item.f_image.url -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
                   </div>
                 </div>
               </div>{%- endif -%}
-              {%- if item.data.f_layout == "Center text (grey)" -%}<div class="section section_grey">
+              {%- if item.f_layout == "Center text (grey)" -%}<div class="section section_grey">
                 <div class="container container_text-center">
                   <div>
                     <div class="div-flex-vertical">
-                      <h2>{{ item.data.f_header }}</h2>
-                      <div class="w-richtext">{{ item.templateContent | markdown | markdown }}</div>
+                      <h2>{{ item.f_header }}</h2>
+                      <div class="w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    <div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image-alt-text }}"></div>
+                    {%- if item.f_image.url -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
                   </div>
                 </div>
               </div>{%- endif -%}
-              {%- if item.data.f_layout == "Left text big (white)" -%}<div class="section">
+              {%- if item.f_layout == "Left text big (white)" -%}<div class="section">
                 <div class="container container_text-left">
                   <div class="grid-left grid-left_big">
                     <div>
-                      <h2>{{ item.data.f_header }}</h2>
-                      <div class="w-richtext">{{ item.templateContent | markdown | markdown }}</div>
+                      <h2>{{ item.f_header }}</h2>
+                      <div class="w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    <div id="w-node-_1538c8da-0845-a689-9f00-03af44619ee2-c55c018f"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}"></div>
+                    {%- if item.f_image.url -%}<div id="w-node-_1538c8da-0845-a689-9f00-03af44619ee2-c55c018f"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
                   </div>
                 </div>
               </div>{%- endif -%}
@@ -91,7 +91,7 @@
           {%- if collection.length == 0 -%}<div class="w-dyn-empty">
             <div>{{ texts.3d503d2b }}</div>
           </div>{%- endif -%}
-        </div>
+        </div>{%- endif -%}
       </div>
       <div class="case-bottom">
         <div class="post-prevnext-row">
