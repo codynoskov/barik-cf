@@ -50,13 +50,12 @@ content:
         label: Header Image
         type: object
         required: true
-        hint: Main hero image displayed at the top of the case study. Use relative paths (filename.png) for local images or full URLs (https://...) for external images.
+        hint: Main hero image displayed at the top of the case study
         fields:
           - name: url
-            label: Image URL or Filename
-            type: string
+            label: Image File
+            type: image
             required: true
-            hint: Enter a filename (e.g., "image.png") for local images, or a full URL (e.g., "https://example.com/image.png") for external images
           - name: alt
             label: Alt Text
             type: string
@@ -133,12 +132,11 @@ content:
           - name: f_image
             label: Section Image
             type: object
-            hint: Image displayed in this section. Use relative paths (filename.png) for local images or full URLs (https://...) for external images.
+            hint: Image displayed in this section
             fields:
               - name: url
-                label: Image URL or Filename
-                type: string
-                hint: Enter a filename (e.g., "image.png") for local images, or a full URL (e.g., "https://example.com/image.png") for external images
+                label: Image File
+                type: image
               - name: alt
                 label: Alt Text
                 type: string
@@ -268,13 +266,12 @@ content:
         label: Featured Image
         type: object
         required: true
-        hint: Main image for this gallery item. Use relative paths (filename.png) for local images or full URLs (https://...) for external images.
+        hint: Main image for this gallery item
         fields:
           - name: url
-            label: Image URL or Filename
-            type: string
+            label: Image File
+            type: image
             required: true
-            hint: Enter a filename (e.g., "image.png") for local images, or a full URL (e.g., "https://example.com/image.png") for external images
           - name: alt
             label: Alt Text
             type: string
