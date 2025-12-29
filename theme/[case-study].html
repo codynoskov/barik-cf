@@ -28,7 +28,7 @@
                 <div>{{ f_tag-line }}</div>
               </div>
               <h1 class="post-number">{{ title }}</h1>
-              <p>{{ f_description }}</p><img loading="lazy" width="822" src="{{ f_header-image.url }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;80vw&quot;}]" alt="{{ f_header-image.alt }}" class="study-image">
+              <p>{{ f_description }}</p>{%- assign header_img_url = f_header-image.url -%}{%- unless header_img_url contains '://' -%}{%- assign header_img_url = '/assets/images/' | append: header_img_url -%}{%- endunless -%}<img loading="lazy" width="822" src="{{ header_img_url }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;93vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;80vw&quot;}]" alt="{{ f_header-image.alt }}" class="study-image">
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
                       <h2>{{ item.f_header }}</h2>
                       <div class="rte-block w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    <div id="w-node-_1538c8da-0845-a689-9f00-03af44619ebb-c55c018f">{%- if item.f_image.url -%}<img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}">{%- endif -%}</div>
+                    <div id="w-node-_1538c8da-0845-a689-9f00-03af44619ebb-c55c018f">{%- if item.f_image.url -%}{%- assign section_img_url = item.f_image.url -%}{%- unless section_img_url contains '://' -%}{%- assign section_img_url = '/assets/images/' | append: section_img_url -%}{%- endunless -%}<img loading="lazy" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;45vw&quot;}]" src="{{ section_img_url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}">{%- endif -%}</div>
                   </div>
                 </div>
               </div>{%- endif -%}
@@ -60,7 +60,7 @@
                       <h2>{{ item.f_header }}</h2>
                       <div class="w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    {%- if item.f_image.url -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
+                    {%- if item.f_image.url -%}{%- assign section_img_url = item.f_image.url -%}{%- unless section_img_url contains '://' -%}{%- assign section_img_url = '/assets/images/' | append: section_img_url -%}{%- endunless -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ section_img_url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
                   </div>
                 </div>
               </div>{%- endif -%}
@@ -71,7 +71,7 @@
                       <h2>{{ item.f_header }}</h2>
                       <div class="w-richtext">{{ item.body | markdown | markdown }}</div>
                     </div>
-                    {%- if item.f_image.url -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ item.f_image.url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
+                    {%- if item.f_image.url -%}{%- assign section_img_url = item.f_image.url -%}{%- unless section_img_url contains '://' -%}{%- assign section_img_url = '/assets/images/' | append: section_img_url -%}{%- endunless -%}<div><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" loading="lazy" src="{{ section_img_url }}" alt="{{ item.f_image-alt-text | default: item.f_image.alt }}"></div>{%- endif -%}
                   </div>
                 </div>
               </div>{%- endif -%}

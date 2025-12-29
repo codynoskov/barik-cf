@@ -51,7 +51,7 @@
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <div class="card" style="background-color: {{item.data.f_color}};">
                   <div class="grid">
-                    <div id="w-node-_57b8b0f4-a404-5d2d-3f60-db28a15c7407-ece528ec"><img loading="lazy" width="822" src="{{ item.data.f_header-image.url }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;83vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;40vw&quot;}]" alt="{{ item.data.f_header-image-alt-text }}" class="front-page-image"></div>
+                    <div id="w-node-_57b8b0f4-a404-5d2d-3f60-db28a15c7407-ece528ec">{%- assign header_img_url = item.data.f_header-image.url -%}{%- unless header_img_url contains '://' -%}{%- assign header_img_url = '/assets/images/' | append: header_img_url -%}{%- endunless -%}<img loading="lazy" width="822" src="{{ header_img_url }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;83vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;87vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;40vw&quot;}]" alt="{{ item.data.f_header-image-alt-text }}" class="front-page-image"></div>
                     <div id="w-node-_57b8b0f4-a404-5d2d-3f60-db28a15c7409-ece528ec">
                       <div class="tag-line">
                         <div>{{ item.data.f_tag-line }}</div>
