@@ -50,7 +50,7 @@ async function addFilesToFunctions() {
     }
     const dirs = await fsp.readdir(functionsPath);
     for (let dir of dirs) {
-        const pathToInclude = path.join(cwd(), 'public', '_includes', dir.replace('.zip', ''));
+        const pathToInclude = path.join(cwd(), '_site', '_includes', dir.replace('.zip', ''));
         if (await fs.pathExists(pathToInclude)) {
             await appendZip(path.join(functionsPath, dir), archive => {
                 archive.directory(pathToInclude, 'includes')
@@ -60,8 +60,8 @@ async function addFilesToFunctions() {
     }
 
     try {
-        fs.emptyDirSync(path.join(cwd(), 'public', '_includes'))
-        fs.removeSync(path.join(cwd(), 'public', '_includes'))
+        fs.emptyDirSync(path.join(cwd(), '_site', '_includes'))
+        fs.removeSync(path.join(cwd(), '_site', '_includes'))
     } catch(e) {
 
     }
