@@ -1,0 +1,543 @@
+media:
+  - name: images
+    label: Images
+    input: theme/assets/images
+    output: /assets/images
+    extensions: [jpg, jpeg, png, gif, svg, webp, avif]
+    categories: [image]
+
+content:
+  - name: pages
+    label: Pages
+    type: collection
+    path: cms/pages
+    extension: md
+    create: false
+    delete: false
+    view:
+      fields: [title, date]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Publish Date
+        type: datetime
+      - name: layout
+        label: Layout
+        type: string
+        default: "{{slug}}.html"
+        hidden: true
+      - name: seo
+        label: SEO
+        type: object
+        collapsed: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: noindex
+            label: No index
+            type: boolean
+            default: false
+          - name: og:title
+            label: Open Graph Title
+            type: string
+          - name: og:image
+            label: Open Graph Image
+            type: image
+          - name: twitter:title
+            label: Twitter Title
+            type: string
+          - name: twitter:card
+            label: Twitter Card
+            type: string
+            default: summary
+          - name: twitter:site
+            label: Twitter Site
+            type: string
+          - name: twitter:creator
+            label: Twitter Creator
+            type: string
+          - name: additional_tags
+            label: Additional HTML tags
+            type: text
+
+  - name: cv
+    label: CVs
+    type: collection
+    path: cms/cv
+    extension: md
+    create: true
+    view:
+      fields: [title, created-on, published-on]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: created-on
+        label: Created On
+        type: datetime
+      - name: updated-on
+        label: Updated On
+        type: datetime
+      - name: published-on
+        label: Published On
+        type: datetime
+      - name: f_pdf
+        label: PDF
+        type: object
+        fields:
+          - name: url
+            label: File
+            type: file
+      - name: tags
+        label: Tags
+        type: string
+        default: cv
+        hidden: true
+      - name: layout
+        label: Layout
+        type: string
+        default: "[cv].html"
+        hidden: true
+      - name: date
+        label: Publish Date
+        type: datetime
+      - name: seo
+        label: SEO
+        type: object
+        collapsed: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: noindex
+            label: No index
+            type: boolean
+            default: false
+          - name: og:title
+            label: Open Graph Title
+            type: string
+          - name: og:image
+            label: Open Graph Image
+            type: image
+          - name: twitter:title
+            label: Twitter Title
+            type: string
+          - name: twitter:card
+            label: Twitter Card
+            type: string
+            default: summary
+          - name: twitter:site
+            label: Twitter Site
+            type: string
+          - name: twitter:creator
+            label: Twitter Creator
+            type: string
+          - name: additional_tags
+            label: Additional HTML tags
+            type: text
+
+  - name: gallery
+    label: Galleries
+    type: collection
+    path: cms/gallery
+    extension: md
+    create: true
+    view:
+      fields: [title, created-on, published-on]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: created-on
+        label: Created On
+        type: datetime
+      - name: updated-on
+        label: Updated On
+        type: datetime
+      - name: published-on
+        label: Published On
+        type: datetime
+      - name: f_big-image
+        label: Big Image
+        type: object
+        required: true
+        fields:
+          - name: url
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: alt
+            type: string
+      - name: f_caption
+        label: Caption
+        type: string
+      - name: tags
+        label: Tags
+        type: string
+        default: gallery
+        hidden: true
+      - name: layout
+        label: Layout
+        type: string
+        default: "[gallery].html"
+        hidden: true
+      - name: date
+        label: Publish Date
+        type: datetime
+      - name: seo
+        label: SEO
+        type: object
+        collapsed: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: noindex
+            label: No index
+            type: boolean
+            default: false
+          - name: og:title
+            label: Open Graph Title
+            type: string
+          - name: og:image
+            label: Open Graph Image
+            type: image
+          - name: twitter:title
+            label: Twitter Title
+            type: string
+          - name: twitter:card
+            label: Twitter Card
+            type: string
+            default: summary
+          - name: twitter:site
+            label: Twitter Site
+            type: string
+          - name: twitter:creator
+            label: Twitter Creator
+            type: string
+          - name: additional_tags
+            label: Additional HTML tags
+            type: text
+
+  - name: blocks
+    label: Blocks
+    type: collection
+    path: cms/blocks
+    extension: md
+    create: true
+    view:
+      fields: [title, created-on, published-on]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: created-on
+        label: Created On
+        type: datetime
+      - name: updated-on
+        label: Updated On
+        type: datetime
+      - name: published-on
+        label: Published On
+        type: datetime
+      - name: body
+        label: Description
+        type: markdown
+      - name: f_relative-to
+        label: Related to
+        type: relation
+        required: true
+        collection: case_study
+        value_field: cms/case-study/{{slug}}.md
+        search_fields: [slug, name]
+        display_fields: [title]
+      - name: f_range-number
+        label: Range Number
+        type: number
+      - name: f_layout
+        label: Layout
+        type: select
+        required: true
+        options:
+          - "Left text small (grey)"
+          - "Left text big (white)"
+          - "Center text (white)"
+          - "Center text (grey)"
+      - name: f_header
+        label: Header
+        type: string
+      - name: f_image
+        label: Image
+        type: object
+        fields:
+          - name: url
+            label: Image
+            type: image
+          - name: alt
+            label: alt
+            type: string
+      - name: f_image-alt-text
+        label: Image alt-text
+        type: string
+      - name: tags
+        label: Tags
+        type: string
+        default: blocks
+        hidden: true
+      - name: layout
+        label: Layout
+        type: string
+        default: "[blocks].html"
+        hidden: true
+      - name: date
+        label: Publish Date
+        type: datetime
+      - name: seo
+        label: SEO
+        type: object
+        collapsed: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: noindex
+            label: No index
+            type: boolean
+            default: false
+          - name: og:title
+            label: Open Graph Title
+            type: string
+          - name: og:image
+            label: Open Graph Image
+            type: image
+          - name: twitter:title
+            label: Twitter Title
+            type: string
+          - name: twitter:card
+            label: Twitter Card
+            type: string
+            default: summary
+          - name: twitter:site
+            label: Twitter Site
+            type: string
+          - name: twitter:creator
+            label: Twitter Creator
+            type: string
+          - name: additional_tags
+            label: Additional HTML tags
+            type: text
+
+  - name: case_study
+    label: Case Studies
+    type: collection
+    path: cms/case-study
+    extension: md
+    create: true
+    view:
+      fields: [title, created-on, published-on]
+    fields:
+      - name: title
+        label: Name
+        type: string
+        required: true
+      - name: created-on
+        label: Created On
+        type: datetime
+      - name: updated-on
+        label: Updated On
+        type: datetime
+      - name: published-on
+        label: Published On
+        type: datetime
+      - name: body
+        label: Key Features List
+        type: markdown
+      - name: f_tag-line
+        label: Tag Line
+        type: string
+        required: true
+      - name: f_description
+        label: Description
+        type: text
+        required: true
+      - name: f_header-image
+        label: Header Image
+        type: object
+        required: true
+        fields:
+          - name: url
+            label: Image
+            type: image
+            required: true
+          - name: alt
+            label: alt
+            type: string
+      - name: f_header-image-alt-text
+        label: Header Image Alt Text
+        type: string
+      - name: f_summary
+        label: Summary
+        type: markdown
+        required: true
+      - name: f_color
+        label: Color
+        type: color
+        enableAlpha: true
+        allowInput: true
+      - name: tags
+        label: Tags
+        type: string
+        default: case-study
+        hidden: true
+      - name: layout
+        label: Layout
+        type: string
+        default: "[case-study].html"
+        hidden: true
+      - name: date
+        label: Publish Date
+        type: datetime
+      - name: seo
+        label: SEO
+        type: object
+        collapsed: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: string
+          - name: noindex
+            label: No index
+            type: boolean
+            default: false
+          - name: og:title
+            label: Open Graph Title
+            type: string
+          - name: og:image
+            label: Open Graph Image
+            type: image
+          - name: twitter:title
+            label: Twitter Title
+            type: string
+          - name: twitter:card
+            label: Twitter Card
+            type: string
+            default: summary
+          - name: twitter:site
+            label: Twitter Site
+            type: string
+          - name: twitter:creator
+            label: Twitter Creator
+            type: string
+          - name: additional_tags
+            label: Additional HTML tags
+            type: text
+
+  - name: settings
+    label: Theme Settings
+    type: singleton
+    path: cms/_data/settings
+    extension: json
+    create: false
+    delete: false
+    files:
+      - name: site
+        label: General
+        file: cms/_data/settings/site.json
+        fields:
+          - name: title
+            label: Title
+            type: string
+            default: General
+            hidden: true
+          - name: domain
+            label: Domain
+            type: string
+            hint: Full domain url (needed for a correct sitemap file)
+          - name: favicon
+            label: Favicon
+            type: image
+          - name: apple_touch_icon
+            label: Apple Touch Icon
+            type: image
+          - name: header_additional_content
+            label: Additional Content Header
+            type: text
+            hint: Content here will be placed before </head> tag
+          - name: footer_additional_content
+            label: Additional Content Footer
+            type: text
+            hint: Content here will be placed before </body> tag
+          - name: images_optimization
+            label: Images Optimization
+            type: object
+            fields:
+              - name: formats
+                label: Image Formats
+                type: select
+                multiple: true
+                options: [avif, webp]
+              - name: dimensions
+                label: Image Dimensions
+                type: select
+                multiple: true
+                options: [500, 800, 1080, 1600, 2000, 2600]
+      - name: colors
+        label: Colors
+        file: cms/_data/colors.json
+        fields:
+          - name: title
+            label: Title
+            type: string
+            default: Colors
+            hidden: true
+      - name: texts
+        label: Texts
+        file: cms/_data/texts.json
+        fields:
+          - name: title
+            label: Title
+            type: string
+            default: Texts
+            hidden: true
+      - name: links
+        label: Links
+        file: cms/_data/links.json
+        fields:
+          - name: title
+            label: Title
+            type: string
+            default: Links
+            hidden: true
+      - name: images
+        label: Images
+        file: cms/_data/images.json
+        fields:
+          - name: title
+            label: Title
+            type: string
+            default: Images
+            hidden: true
+
